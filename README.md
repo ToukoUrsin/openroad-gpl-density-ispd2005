@@ -2,7 +2,7 @@
 
 Legal, officially scored placements of the ISPD2005 Bookshelf benchmarks with OpenROAD
 `26Q2-1164-g08f67ee5ec` (Ubuntu 24.04 release .deb), comparing `global_placement` at its default
-target density with `global_placement -density 0.85`. Everything else is identical.
+target density (0.70, logged as `GPL-0023`) with `global_placement -density 0.85`. Everything else is identical.
 
 | design | default HPWL | `-density 0.85` HPWL | delta | runtime default / 0.85 |
 |---|---:|---:|---:|---:|
