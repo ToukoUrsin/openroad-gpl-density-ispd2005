@@ -1,0 +1,22 @@
+{
+  "command": [
+    "nice",
+    "-n",
+    "19",
+    "/usr/bin/time",
+    "-v",
+    "/root/w/worker/adaptec3-daytona/run_openroad.sh",
+    "-exit",
+    "-python",
+    "/root/w/worker/adaptec3-daytona/src/openroad_place.py"
+  ],
+  "environment": {
+    "BRIDGE_DIR": "/root/w/worker/adaptec3-daytona/data/bridge-adaptec3-density085-dpl100k",
+    "PLACEMENT_OUT": "/root/w/worker/adaptec3-daytona/results/adaptec3-density085-dpl100k",
+    "BOOKSHELF_PREFIX": "/root/w/worker/adaptec3-daytona/data/benchmarks/adaptec3/adaptec3",
+    "EXPECTED_INPUT_HPWL": "390424154",
+    "GPL_OPTIONS": "-density 0.85",
+    "PLACEMENT_THREADS": "4"
+  },
+  "timeout_seconds": 4500
+}

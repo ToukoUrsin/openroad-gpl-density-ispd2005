@@ -1,0 +1,55 @@
+{
+  "claim": "On public ISPD2005 adaptec2, OpenROAD 26Q2 default global placement through the corrected fixed-aware Bookshelf bridge, followed by a bounded detailed-placement repair, emits a complete legal placement scoring 97,582,013 official HPWL.",
+  "scope": "adaptec2 only; synthetic LEF/DEF bridge preserves Bookshelf cell dimensions, pin offsets, nets, fixed coordinates, and rows; no routed wirelength or DRV claim",
+  "live_comparator": {
+    "tool": "OpenROAD RePlAce global_placement + detailed_placement",
+    "binary": "26Q2-1164-g08f67ee5ec",
+    "source": "https://vaultlink.precisioninno.com/api/releases/latest",
+    "bridge": "corrected fixed-aware Bookshelf bridge from worker/worker3-005/src/bookshelf_bridge.py",
+    "raw_default_hpwl": 97582245.728,
+    "raw_default_legal_errors": {"0": 0, "1": 0, "2": 120, "3": 53},
+    "raw_default_legal_pass": false,
+    "note": "The raw default output is retained as failed comparator evidence; the repaired legal default is the accepted baseline artifact below."
+  },
+  "artifact": {
+    "name": "default global_placement + detailed_placement -max_displacement 100000",
+    "hpwl": 97582013.0,
+    "legal_errors": {"0": 0, "1": 0, "2": 0, "3": 0},
+    "official_legal_pass": true,
+    "placement_seconds": 223.54517137701623,
+    "repair_seconds": 8.940256967034657,
+    "total_seconds": 232.4854283440509,
+    "placement_sha256": "a5469a71f761b8abe8acee928d6acf833f1f6615aadadeec2b65e8b4364131da"
+  },
+  "comparison": {
+    "density085_legal_hpwl": 89643547.0,
+    "density085_delta_vs_legal_default_percent": -8.135173436112657,
+    "density085_total_seconds": 360.12696497202035,
+    "interpretation": "The density-0.85 candidate remains 8.1352% lower HPWL than this corrected legal default on adaptec2, at 1.549x the measured default-plus-repair runtime. Neither result is a six-design charter acceptance result."
+  },
+  "negative_control": {
+    "input_hpwl": 147771030.0,
+    "legal_errors": {"0": 0, "1": 508914, "2": 0, "3": 0},
+    "rejected": true
+  },
+  "evidence_files": [
+    "results/openroad-adaptec2-default/official.json",
+    "results/openroad-adaptec2-default/official.hpwl.log",
+    "results/openroad-adaptec2-default/official.legal2.log",
+    "results/openroad-adaptec2-default/official.legal-detail-preview.log",
+    "results/openroad-adaptec2-default/adaptec2.repaired.pl.gz",
+    "results/openroad-adaptec2-default/metrics.json",
+    "results/openroad-adaptec2-default/openroad.log",
+    "results/openroad-adaptec2-default/repair.log",
+    "results/openroad-adaptec2-default/illegal-input-control.json",
+    "worker/worker3-005/src/bookshelf_bridge.py",
+    "worker/worker3-013/check_output.py"
+  ],
+  "commands": [
+    "nice -n 19 python3 worker/worker3-005/src/run_benchmark.py --bench adaptec2 --variant default-fixed-aware-rerun --threads 2 --timeout 1100",
+    "openroad -exit -python worker/worker3-005/src/repair_density.py with MAX_DISP=100000",
+    "python3 worker/worker3-013/check_output.py worker/worker3-005/data/benchmarks/adaptec2/adaptec2 worker/worker3-005/results/adaptec2-default-fixed-aware-rerun/repair/adaptec2.pl --out results/openroad-adaptec2-default/official.json",
+    "python3 worker/worker3-013/check_output.py worker/worker3-005/data/benchmarks/adaptec2/adaptec2 worker/worker3-005/data/benchmarks/adaptec2/adaptec2.pl --out results/openroad-adaptec2-default/illegal-input-control.json"
+  ],
+  "evidence_level": "reproduced_and_independently_checked_on_original_inputs_for_adaptec2; legal baseline, not submitted, not accepted, not charter-complete"
+}

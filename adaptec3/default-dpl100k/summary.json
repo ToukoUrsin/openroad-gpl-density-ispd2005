@@ -1,0 +1,33 @@
+{
+  "benchmark": "adaptec3",
+  "variant": "default-dpl100k",
+  "official_hpwl": 218907385.0,
+  "legal": true,
+  "threads": 4,
+  "gpl_options": "",
+  "metrics": {
+    "before": {
+      "hpwl_bookshelf_units": 390424154.0,
+      "pins": 1875039,
+      "nets": 466758,
+      "pin_coordinate_mismatches": 0
+    },
+    "global_placement": {
+      "hpwl_bookshelf_units": 216080072.104,
+      "pins": 1875039,
+      "nets": 466758,
+      "pin_coordinate_mismatches": 0
+    },
+    "legal": {
+      "hpwl_bookshelf_units": 218907385.0,
+      "pins": 1875039,
+      "nets": 466758,
+      "pin_coordinate_mismatches": 0
+    },
+    "gp_seconds": 320.9463031240739,
+    "dp_seconds": 7.796852936036885,
+    "total_seconds": 362.8040802888572,
+    "global_placement_command": "global_placement"
+  },
+  "placement_sha256": "413aad6ff38279a3c76fde3f0220a2effbc2cd30d4900332b1bff9dafe726ebe"
+}

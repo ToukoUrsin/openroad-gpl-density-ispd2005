@@ -1,0 +1,206 @@
+OpenROAD 26Q2-1164-g08f67ee5ec 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING ORD-0039] .openroad ignored with -python
+[INFO ODB-0221] 1000000 lines parsed!
+[INFO ODB-0221] 2000000 lines parsed!
+[INFO ODB-0227] LEF file: /root/w/worker/adaptec3-daytona/data/bridge-adaptec3-density085-dpl100k/cells.lef, created 2 layers, 31830 library cells
+[INFO ODB-0127] Reading DEF file: /root/w/worker/adaptec3-daytona/data/bridge-adaptec3-density085-dpl100k/input.def
+[INFO ODB-0128] Design: adaptec3
+[INFO ODB-0094] 		Created 100000 Insts
+[INFO ODB-0094] 		Created 200000 Insts
+[INFO ODB-0094] 		Created 300000 Insts
+[INFO ODB-0094] 		Created 400000 Insts
+[INFO ODB-0097] 		Created 100000 Nets
+[INFO ODB-0097] 		Created 200000 Nets
+[INFO ODB-0097] 		Created 300000 Nets
+[INFO ODB-0097] 		Created 400000 Nets
+[INFO ODB-0131]     Created 451650 components and 1875039 component-terminals.
+[INFO ODB-0133]     Created 466758 nets and 1875039 connections.
+[INFO ODB-0134] Finished DEF file: /root/w/worker/adaptec3-daytona/data/bridge-adaptec3-density085-dpl100k/input.def
+[INFO ORD-0030] Using 4 thread(s).
+Loaded 451650 466758
+First pin [True, 0, 5000]
+{"hpwl_bookshelf_units": 390424154.0, "pins": 1875039, "nets": 466758, "pin_coordinate_mismatches": 0}
+COMMAND global_placement -density 0.85
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  1.000 12.000 ) um
+[INFO GPL-0004] CoreBBox: ( 36.000 58.000 ) ( 23226.000 23386.000 ) um
+[INFO GPL-0036] Movable instances area:     69799500.000 um^2
+[INFO GPL-0037] Total instances area:       402547992.000 um^2
+[INFO GPL-0035] Pin density area adjust:    6840826.470 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:            451746
+[INFO GPL-0007] Movable instances:              450927
+[INFO GPL-0008] Fixed instances:                   723
+[INFO GPL-0009] Dummy instances:                    96
+[INFO GPL-0010] Number of nets:                 466758
+[INFO GPL-0011] Number of pins:                1875039
+[INFO GPL-0012] Die BBox:  ( 36.000 58.000 ) ( 23226.000 23386.000 ) um
+[INFO GPL-0013] Core BBox: ( 36.000 58.000 ) ( 23226.000 23386.000 ) um
+[INFO GPL-0016] Core area:                  540976320.000 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                540976320.000 um^2
+[INFO GPL-0017] Fixed instances area:       333630924.000 um^2
+[INFO GPL-0018] Movable instances area:     76640326.470 um^2
+[INFO GPL-0019] Utilization:                    36.963 %
+[INFO GPL-0020] Standard cells area:        76640326.470 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 450927	Core center = 0	Region center = 0
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.04297347 HPWL: 428745009000
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.02915504 HPWL: 418219360092
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.01235944 HPWL: 400339265863
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00726372 HPWL: 375630436535
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00443325 HPWL: 356836846704
+[InitialPlace]  Iter: 6 conjugate gradient residual: 0.00189915 HPWL: 342306480304
+[InitialPlace]  Iter: 7 conjugate gradient residual: 0.00074003 HPWL: 330511850223
+[InitialPlace]  Iter: 8 conjugate gradient residual: 0.00033757 HPWL: 323053988228
+[InitialPlace]  Iter: 9 conjugate gradient residual: 0.00021351 HPWL: 317230941164
+[InitialPlace]  Iter: 10 conjugate gradient residual: 0.00016758 HPWL: 311856097271
+[InitialPlace]  Iter: 11 conjugate gradient residual: 0.00011528 HPWL: 307263753400
+[InitialPlace]  Iter: 12 conjugate gradient residual: 0.00010393 HPWL: 303176563137
+[InitialPlace]  Iter: 13 conjugate gradient residual: 0.00008585 HPWL: 298311157553
+[InitialPlace]  Iter: 14 conjugate gradient residual: 0.00007498 HPWL: 295792651754
+[InitialPlace]  Iter: 15 conjugate gradient residual: 0.00006436 HPWL: 292964558422
+[InitialPlace]  Iter: 16 conjugate gradient residual: 0.00006394 HPWL: 290666168730
+[InitialPlace]  Iter: 17 conjugate gradient residual: 0.00006949 HPWL: 288401017121
+[InitialPlace]  Iter: 18 conjugate gradient residual: 0.00006236 HPWL: 285989664380
+[InitialPlace]  Iter: 19 conjugate gradient residual: 0.00006080 HPWL: 283765172651
+[InitialPlace]  Iter: 20 conjugate gradient residual: 0.00005145 HPWL: 281847356682
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.8500
+[INFO GPL-0024] Movable insts average area:    169.962 um^2
+[INFO GPL-0025] Ideal bin area:                199.955 um^2
+[INFO GPL-0026] Ideal bin count:               2705491
+[INFO GPL-0027] Total bin area:             540976320.000 um^2
+[INFO GPL-0028] Bin count (X, Y):        1024 ,   1024
+[INFO GPL-0029] Bin size (W * H):      22.646 * 22.781 um
+[INFO GPL-0030] Number of bins:                1048576
+[INFO GPL-0084] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9837 |  2.344829e+08 |   +0.00% |  1.07e-17 |      
+       10 |   0.9722 |  2.522373e+08 |   +7.57% |  6.43e-18 |      
+       20 |   0.9618 |  2.625244e+08 |   +4.08% |  3.92e-18 |      
+       30 |   0.9543 |  2.667222e+08 |   +1.60% |  3.81e-18 |      
+       40 |   0.9435 |  2.664428e+08 |   -0.10% |  5.77e-18 |      
+       50 |   0.9312 |  2.623648e+08 |   -1.53% |  9.40e-18 |      
+       60 |   0.9198 |  2.548558e+08 |   -2.86% |  1.53e-17 |      
+       70 |   0.9154 |  2.469158e+08 |   -3.12% |  2.49e-17 |      
+       80 |   0.9116 |  2.396895e+08 |   -2.93% |  4.06e-17 |      
+       90 |   0.8988 |  2.313822e+08 |   -3.47% |  6.62e-17 |      
+      100 |   0.8760 |  2.218571e+08 |   -4.12% |  1.08e-16 |      
+      110 |   0.8614 |  2.118577e+08 |   -4.51% |  1.76e-16 |      
+      120 |   0.8690 |  2.043350e+08 |   -3.55% |  2.86e-16 |      
+      130 |   0.8751 |  1.992001e+08 |   -2.51% |  4.66e-16 |      
+      140 |   0.8762 |  1.949032e+08 |   -2.16% |  7.59e-16 |      
+      150 |   0.8816 |  1.901141e+08 |   -2.46% |  1.24e-15 |      
+      160 |   0.8766 |  1.848324e+08 |   -2.78% |  2.01e-15 |      
+      170 |   0.8676 |  1.797082e+08 |   -2.77% |  3.28e-15 |      
+      180 |   0.8568 |  1.754047e+08 |   -2.39% |  5.34e-15 |      
+      190 |   0.8568 |  1.719801e+08 |   -1.95% |  8.70e-15 |      
+      200 |   0.8606 |  1.694994e+08 |   -1.44% |  1.42e-14 |      
+      210 |   0.8611 |  1.678062e+08 |   -1.00% |  2.31e-14 |      
+      220 |   0.8652 |  1.666107e+08 |   -0.71% |  3.76e-14 |      
+      230 |   0.8665 |  1.658559e+08 |   -0.45% |  6.13e-14 |      
+      240 |   0.8655 |  1.650408e+08 |   -0.49% |  9.98e-14 |      
+      250 |   0.8652 |  1.647413e+08 |   -0.18% |  1.62e-13 |      
+      260 |   0.8644 |  1.651438e+08 |   +0.24% |  2.55e-13 |      
+      270 |   0.8659 |  1.664868e+08 |   +0.81% |  3.63e-13 |      
+      280 |   0.8611 |  1.686694e+08 |   +1.31% |  4.67e-13 |      
+      290 |   0.8572 |  1.710534e+08 |   +1.41% |  5.88e-13 |      
+      300 |   0.8501 |  1.737437e+08 |   +1.57% |  7.13e-13 |      
+      310 |   0.8405 |  1.755268e+08 |   +1.03% |  9.46e-13 |      
+      320 |   0.8348 |  1.769113e+08 |   +0.79% |  1.32e-12 |      
+      330 |   0.8240 |  1.775846e+08 |   +0.38% |  1.98e-12 |      
+      340 |   0.8127 |  1.779764e+08 |   +0.22% |  3.12e-12 |      
+      350 |   0.8005 |  1.811741e+08 |   +1.80% |  3.68e-12 |      
+      360 |   0.7826 |  1.842583e+08 |   +1.70% |  4.20e-12 |      
+      370 |   0.7721 |  1.863134e+08 |   +1.12% |  5.41e-12 |      
+      380 |   0.7579 |  1.871450e+08 |   +0.45% |  8.04e-12 |      
+      390 |   0.7400 |  1.892657e+08 |   +1.13% |  1.05e-11 |      
+      400 |   0.7235 |  1.914840e+08 |   +1.17% |  1.34e-11 |      
+      410 |   0.7077 |  1.935907e+08 |   +1.10% |  1.75e-11 |      
+      420 |   0.6893 |  1.947285e+08 |   +0.59% |  2.44e-11 |      
+      430 |   0.6686 |  1.969911e+08 |   +1.16% |  3.21e-11 |      
+      440 |   0.6531 |  1.989113e+08 |   +0.97% |  4.17e-11 |      
+      450 |   0.6300 |  2.003642e+08 |   +0.73% |  5.74e-11 |      
+      460 |   0.6074 |  2.018988e+08 |   +0.77% |  7.94e-11 |      
+      470 |   0.5798 |  2.033810e+08 |   +0.73% |  1.10e-10 |      
+      480 |   0.5467 |  2.044282e+08 |   +0.51% |  1.60e-10 |      
+      490 |   0.5108 |  2.054767e+08 |   +0.51% |  2.31e-10 |      
+      500 |   0.4701 |  2.063997e+08 |   +0.45% |  3.41e-10 |      
+      510 |   0.4275 |  2.071437e+08 |   +0.36% |  5.08e-10 |      
+      520 |   0.3849 |  2.076224e+08 |   +0.23% |  7.86e-10 |      
+      530 |   0.3388 |  2.077720e+08 |   +0.07% |  1.23e-09 |      
+      540 |   0.2997 |  2.071018e+08 |   -0.32% |  1.81e-09 |      
+      550 |   0.2637 |  2.061709e+08 |   -0.45% |  2.67e-09 |      
+      560 |   0.2310 |  2.053286e+08 |   -0.41% |  3.93e-09 |      
+      570 |   0.2005 |  2.045096e+08 |   -0.40% |  5.79e-09 |      
+      580 |   0.1731 |  2.038768e+08 |   -0.31% |  8.52e-09 |      
+      590 |   0.1482 |  2.034305e+08 |   -0.22% |  1.26e-08 |      
+      600 |   0.1262 |  2.031516e+08 |   -0.14% |  1.85e-08 |      
+      610 |   0.1073 |  2.029750e+08 |   -0.09% |  2.73e-08 |      
+      615 |   0.0986 |  2.029084e+08 |          |  3.44e-08 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 615
+[INFO GPL-1002] Placed Cell Area            76640326.4701
+[INFO GPL-1003] Available Free Area         207345396.0000
+[INFO GPL-1004] Minimum Feasible Density        0.3700 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.4107
+[INFO GPL-1008]     - For 80% usage of free space: 0.4620
+[INFO GPL-1009]     - For 50% usage of free space: 0.7393
+[INFO GPL-1014] Final placement area: 76640326.47 (+0.00%)
+{"hpwl_bookshelf_units": 202935312.744, "pins": 1875039, "nets": 466758, "pin_coordinate_mismatches": 0}
+COMMAND detailed_placement -max_displacement 100000
+[INFO DPL-0006] Core area: 540976320.00 um^2, Instances area: 402547992.00 um^2, Utilization: 74.4%
+[INFO DPL-0005] Diamond search max displacement: +/- 100000 sites horizontally, +/- 8333 rows vertically.
+[INFO DPL-1101] Legalizing using diamond search.
+Movements Summary
+---------------------------------------
+Total cells:                  450927
+Diamond Move Success:         450927 (100.00%)
+Diamond Move Failure:              0
+Rip-up and replace Success:        0 (  0.00% of diamond failures)
+Rip-up and replace Failure:        0
+Total Placement Failures:          0
+---------------------------------------
+Placement Analysis
+---------------------------------
+total displacement    5134126.0 u
+average displacement       11.4 u
+max displacement         1124.8 u
+original HPWL        202935312.7 u
+legalized HPWL       206830024.0 u
+delta HPWL                    2 %
+
+{"hpwl_bookshelf_units": 206830024.0, "pins": 1875039, "nets": 466758, "pin_coordinate_mismatches": 0}
+	Command being timed: "/root/w/worker/adaptec3-daytona/run_openroad.sh -exit -python /root/w/worker/adaptec3-daytona/src/openroad_place.py"
+	User time (seconds): 577.44
+	System time (seconds): 8.55
+	Percent of CPU this job got: 145%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:41.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3392604
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 118
+	Minor (reclaiming a frame) page faults: 4519438
+	Voluntary context switches: 6564
+	Involuntary context switches: 3044
+	Swaps: 0
+	File system inputs: 10296
+	File system outputs: 374400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

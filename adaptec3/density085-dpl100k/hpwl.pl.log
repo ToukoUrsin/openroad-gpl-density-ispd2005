@@ -1,0 +1,11 @@
+NumNodes: 451650 NumTerminals: 723
+Phase 1: Node file processing is done.
+         Total 451650 objects (terminal 723).
+Phase 2: Input PL file processing is done.
+         Total 451650 objects
+Phase 3: Solution PL file processing is done.
+         Total 451650 objects
+NumNets: 466758 NumPins: 1875039
+Phase 3: Net file processing is done.
+         Total 466758 nets 1875039 pins.
+         Total HPWL: 206830024

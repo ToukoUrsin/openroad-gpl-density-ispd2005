@@ -1,0 +1,23 @@
+{
+  "nodes": 255023,
+  "placed": 255023,
+  "missing": [],
+  "missing_count": 0,
+  "extra_count": 0,
+  "duplicate_count": 0,
+  "moved_fixed_count": 0,
+  "moved_fixed": [],
+  "nonfinite_count": 0,
+  "coverage_pass": true,
+  "hpwl_returncode": 0,
+  "hpwl": 97582013.0,
+  "legal2_returncode": 0,
+  "legal_detail_bytes": 24445,
+  "legal_errors": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "official_legal_pass": true
+}

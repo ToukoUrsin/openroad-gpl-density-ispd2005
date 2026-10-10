@@ -1,0 +1,22 @@
+{
+  "command": [
+    "nice",
+    "-n",
+    "19",
+    "/usr/bin/time",
+    "-v",
+    "<packet>/run_openroad.sh",
+    "-exit",
+    "-python",
+    "<packet>/src/openroad_place.py"
+  ],
+  "environment": {
+    "BRIDGE_DIR": "<packet>/data/bridge-adaptec2-density085-fixed-aware-new",
+    "PLACEMENT_OUT": "<packet>/results/adaptec2-density085-fixed-aware-new",
+    "BOOKSHELF_PREFIX": "<packet>/data/benchmarks/adaptec2/adaptec2",
+    "EXPECTED_INPUT_HPWL": "147771030",
+    "GPL_OPTIONS": "-density 0.85",
+    "PLACEMENT_THREADS": "2"
+  },
+  "timeout_seconds": 1000
+}

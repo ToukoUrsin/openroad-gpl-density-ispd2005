@@ -1,0 +1,24 @@
+{
+  "before": {
+    "hpwl_bookshelf_units": 390424154.0,
+    "pins": 1875039,
+    "nets": 466758,
+    "pin_coordinate_mismatches": 0
+  },
+  "global_placement": {
+    "hpwl_bookshelf_units": 202935312.744,
+    "pins": 1875039,
+    "nets": 466758,
+    "pin_coordinate_mismatches": 0
+  },
+  "legal": {
+    "hpwl_bookshelf_units": 206830024.0,
+    "pins": 1875039,
+    "nets": 466758,
+    "pin_coordinate_mismatches": 0
+  },
+  "gp_seconds": 355.8637981978245,
+  "dp_seconds": 9.67192501295358,
+  "total_seconds": 400.25361205777153,
+  "global_placement_command": "global_placement -density 0.85"
+}

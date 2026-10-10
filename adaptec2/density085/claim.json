@@ -1,0 +1,71 @@
+{
+  "claim": "OpenROAD 26Q2 global placement at density 0.85 followed by bounded detailed-placement repair emitted a complete legal adaptec2 placement, independently checked with the official ISPD2005 evaluator.",
+  "live_comparator": {
+    "name": "OpenROAD 26Q2 default global_placement + detailed_placement on adaptec2",
+    "source": "https://vaultlink.precisioninno.com/api/releases/latest",
+    "binary": "26Q2-1164-g08f67ee5ec",
+    "reported_raw_hpwl": 97582245.728,
+    "reported_legal_pass": false,
+    "scope": "same synthetic LEF/DEF bridge; worker default run had Type2=120 and Type3=53 and is retained only as a failed baseline"
+  },
+  "candidate": {
+    "name": "OpenROAD 26Q2 global_placement -density 0.85 + detailed_placement -max_displacement 100000",
+    "hpwl": 89643547.0,
+    "legal_errors": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "official_legal_pass": true,
+    "placement_runtime_seconds": 352.48696497202036,
+    "repair_runtime_seconds": 7.64,
+    "total_runtime_seconds": 360.12696497202035,
+    "run_ids": [
+      "chip-placement-1007-203251-c9f7",
+      "chip-placement-1007-204334-2tun"
+    ],
+    "delta_vs_failed_default_raw_percent": -8.135392528399343,
+    "placement_sha256": "20cf05a57dd360e27762a70acd86fb2c3f8ab4ce177a567010dc74582298395f"
+  },
+  "acceptance_test": {
+    "required": "At least 2% lower legalized HPWL than current OpenROAD RePlAce and DREAMPlace on at least six designs, runtime <=2x; no worse routed metrics where routed",
+    "satisfied": false,
+    "reason": "Two designs have OpenROAD observations, but the adaptec2 default comparator is illegal, DREAMPlace comparison is not available for adaptec2, and no six-design or routed result exists."
+  },
+  "evidence_level": "independently_checked_two_design_openroad_observation; adaptec2 candidate legal, comparator failed legality",
+  "evidence_files": [
+    "results/openroad-adaptec2-density085/adaptec2.repaired.pl.gz",
+    "results/openroad-adaptec2-density085/official.json",
+    "results/openroad-adaptec2-density085/official.hpwl.log",
+    "results/openroad-adaptec2-density085/official.legal2.log",
+    "results/openroad-adaptec2-density085/illegal-input-control.json",
+    "results/openroad-adaptec2-density085/metrics.json",
+    "results/openroad-adaptec2-density085/repair.log",
+    "worker/worker3-005/results/adaptec2-default-t2/metrics.json",
+    "worker/worker3-005/results/adaptec2-default-t2/legal2.pl.log",
+    "worker/worker3-005/results/005/claim.json"
+  ],
+  "commands": [
+    "python3 src/run_benchmark.py --bench adaptec2 --variant density085-fixed-aware-new --gpl-options=\"-density 0.85\" --threads 2 --timeout 1000 --prefix data/benchmarks/adaptec2/adaptec2",
+    "bash run_repair_density.sh",
+    "nice -n 19 python3 worker/worker3-013/check_output.py worker/worker3-005/data/benchmarks/adaptec2/adaptec2 /tmp/adaptec2-repaired.pl --out results/openroad-adaptec2-density085/official.json",
+    "nice -n 19 python3 worker/worker3-013/check_output.py worker/worker3-005/data/benchmarks/adaptec2/adaptec2 worker/worker3-005/data/benchmarks/adaptec2/adaptec2.pl --out results/openroad-adaptec2-density085/illegal-input-control.json"
+  ],
+  "negative_control": {
+    "input_hpwl": 147771030.0,
+    "legal_errors": {
+      "0": 0,
+      "1": 508914,
+      "2": 0,
+      "3": 0
+    },
+    "rejected": true
+  },
+  "sha256": {
+    "official.json": "7cb258e12633278cfa719e88166a26fb28dce731cfdefba22607249f7ddf0e64",
+    "illegal-input-control.json": "5eb0952f5f1fa2a501ed050810b152428d74c390cdd963dc06af2750ef6afb45",
+    "metrics.json": "dddf7c362d7661002bb087401af53897e4105b7ac620fe73c761c091b77c8e51",
+    "adaptec2.repaired.pl.gz": "dac43e8cb06d6d714bed484c330f02e2983b305bb1d74c1dbd7c7309a36c0952"
+  }
+}
